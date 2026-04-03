@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToxiPredict AI | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent pt-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-gradient" href="/">ToxiPredict AI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/predict_page">Prediction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-section d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bolder mb-4 text-gradient-hero">Predict Drug Toxicity<br>With AI Precision.</h1>
+            <p class="lead text-light-opacity mb-5 hero-subtitle">Leverage advanced machine learning models to analyze molecular descriptors and instantly evaluate chemical toxicity.</p>
+            <div class="d-flex justify-content-center gap-4">
+                <a href="/predict_page" class="btn btn-primary btn-lg custom-btn shadow-glow">Start Predicting</a>
+                <a href="/dashboard" class="btn btn-outline-light btn-lg custom-btn-outline">View Dashboard</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Decorative elements -->
+    <div class="blob shape-1"></div>
+    <div class="blob shape-2"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
